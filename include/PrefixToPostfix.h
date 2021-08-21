@@ -124,7 +124,17 @@ string PrefixToPostfix(string PrefixExp)
     }
     //Display top of stack which is only Postfix Expression 
     cout<<endl;
-    cout<<"SO FINAL POSTFIX EXPRESSION IS:  ";
-    return peek(stack);
+    
+    string temporary = peek(stack);
+    pop(stack);
+    if(isEmpty(stack))
+    {
+        cout<<"SO FINAL POSTFIX EXPRESSION IS:  ";
+        return temporary;
+    }
+    else{
+        throw "stack contains more than one item so prefix exp is INCORRECT";
+        return 0;
+    }
 }
 
