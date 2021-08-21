@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp",
+        "string": "cpp",
+        "ostream": "cpp",
+        "__bit_reference": "cpp",
+        "__split_buffer": "cpp",
+        "vector": "cpp"
+    }
+}
