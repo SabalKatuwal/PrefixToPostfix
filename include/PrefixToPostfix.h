@@ -60,7 +60,7 @@ string pop(Stack* stack)
 string peek(Stack* stack)
 {
     if (isEmpty(stack)){
-            cout<<"Stack empty."<<endl;
+            throw "Stack is empty....the Prefix expression you entered is INCORRECT";
             return 0;
         }   
     else
