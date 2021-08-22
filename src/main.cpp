@@ -16,7 +16,7 @@ int main()
         std::cout<< PrefixToPostfix(pre_exp)<<std::endl;
         std::cout<<std::endl;
     }
-    catch(const char *error){
-        std::cerr<<error<<std::endl;
+    catch(const char *message){
+        std::cerr<<message<<std::endl;
     }
 }  
