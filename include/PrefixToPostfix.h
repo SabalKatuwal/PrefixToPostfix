@@ -7,16 +7,16 @@ class Stack
     public: 
     int top;  
     unsigned size;  
-    string* array;  
+    string* array; 
 };  
 
 //Creates a stack of desired size
-Stack* createStack(unsigned size)  
+Stack* createStack(unsigned length)  
 {  
     Stack* stack = new Stack(); 
-    stack->size = size;  
+    stack->size = length;  
     stack->top = -1;  
-    stack->array = new string[(stack->size * sizeof(string))];  
+    stack->array = new string[(stack->size * sizeof(string))];      
     return stack;  
 }  
 
@@ -88,8 +88,8 @@ string PrefixToPostfix(string PrefixExp)
 {
     // Create stack equal to size of string  
     int length = PrefixExp.size();  
-    Stack* stack = createStack(length);
- 
+    Stack* stack = createStack(length);  
+    
     //for loop loops from right to left of string
     for (int i = length - 1; i >= 0; i--)
     {
@@ -122,7 +122,7 @@ string PrefixToPostfix(string PrefixExp)
 
         }
     }
-    //Display top of stack which is only Postfix Expression 
+    //Display top of stack which is only Postfix Expression
     cout<<endl;
     
     string temporary = peek(stack);
